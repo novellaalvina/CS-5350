@@ -49,7 +49,7 @@ def standard_perceptron(dataset_train_with_bias, y_train_label, epoch, r):
   for i in range(epoch):
 
     # shuffle the data
-    # np.random.shuffle(dataset_with_bias)
+    np.random.shuffle(dataset_with_bias)
 
     for i in range(len(dataset_train_with_bias)):
 
@@ -75,7 +75,7 @@ def voted_perceptron(dataset_train_with_bias, y_train_label, epoch, r):
   for i in range(epoch):
 
     # shuffle the data
-    # np.random.shuffle(dataset_train_no_label)
+    np.random.shuffle(dataset_train_no_label)
 
     for i in range(len(dataset_train_with_bias)):
 
@@ -103,7 +103,7 @@ def average_perceptron(dataset_train_with_bias, y_train_label, epoch, r):
   for i in range(epoch):
 
     # shuffle the data
-    # np.random.shuffle(dataset_train_no_label)
+    np.random.shuffle(dataset_train_no_label)
 
     for i in range(len(dataset_train_with_bias)):
 
